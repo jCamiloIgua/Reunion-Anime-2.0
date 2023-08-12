@@ -1,0 +1,109 @@
+
+
+/*ESTILOS SOLO PARA LA PAGINA DE IMAGENES*/
+/*propiedad target de css con id*/
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));/*poner las imagenes en columnas al maximo de la pantalla responsivo*/
+    width: 95%; /*ancho*/
+    margin: auto; /*centrar*/
+    grid-gap: 10px;/*espaciado entre los elementos*/
+    padding: 40px 0; /*espacio*/
+    overflow: hidden;
+ }
+
+ .galeria .imagen{
+     display: block;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 0 0 6px rgb(0, 0, 0, .5); /*darle sombreado a la iamgen*/
+ }
+
+ .galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover; /*no pierda la definicion la imagen*/
+    transition: transform 0.5s; /*duracion del movimiento de la imagen utilizando transform de mas abajo*/
+}
+
+ /*ANIMACION CSS*/
+
+ .galeria a:hover img{ /*cuando ponemos el cursor encima de la imagen*/
+    filter: blur(2px); /*distorciona la imagen cuando ponemos el mouse*/
+    transform: rotate(10deg) scale(1.3); /*la imagen rote*/
+ }
+
+ .light-box{
+     position: fixed;/*te fijes a la pantalla*/
+     top: 0;
+     left: 0;
+     background: rgb(0, 0, 0, .5); /*sombreado de la imagen abierta*/
+     transition: transform .3s ease-in-out; /*efecto al abrir la imagen */
+     width: 100%;
+     height: 100vh;
+     z-index: 1000;
+     display: flex;
+     justify-content: center;/*centrae horizontalmente y verticalmente*/
+     align-items: center;
+     transform: scale(0); /*se oculte aste que le den clik a la imagen*/
+ }
+
+ .light-box img{
+     width: 75vw;/*ocupes el 75 posiento del alto de la pantalla*/
+     max-height: 70vh; /*ocupes el 70 porsiento del alcho de la pantalla*/
+ }
+
+ .light-box:target{ /*target*/
+    transform: scale(1); /*si algien le da click en la imagen aparesca*/
+
+ }
+
+ /*boton de cerrar*/
+
+ .close{
+     display: block;
+     position: absolute; /*porque su padre tiene una pocision fixed*/
+     top: 110px;
+     right: 59px;
+     background: red;
+     color: #fff;
+     text-decoration: none;
+     width: 45px;
+     height: 45px;
+     text-align: center;
+     line-height: 45px;
+     border-radius: 50%; /*para hacerlo un circulo*/
+ }
+
+ /*FLECHAS*/
+
+ .next{
+     display: block;
+     background: #851919;
+     color: #fff;
+     height: 30px;
+     width: 30px;
+     line-height: 30px;
+     text-decoration: none;
+     text-align: center;
+ }
+
+ .signo{ /*signo rjo oflfecha roja*/
+    font-size: 34.6px;/*tamaño*/
+    color: red;/*color*/
+    margin-left: 9px;/*maegen izquieerda*/
+}
+ /*responsive*/
+
+ @media screen and (max-width:400px){
+     .galeria{
+         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     }
+     
+     .close{
+         top: 137px;
+         right: 35px;
+     }
+ }

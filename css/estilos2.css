@@ -1,0 +1,27 @@
+
+/*resonsive solo para el index*/
+/*SOLO PARA PAGINA DE INDEX*/
+
+/*MEDIA QUERIE*/ /*RESPONCIVE*/
+@media screen and (max-width: 768px){
+    .post .thumb {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+/*imagen de contacto*/
+.img-uno {
+    display: inline-block;
+    max-width: 60%;
+    height: auto;
+    padding: 10px;
+    margin-left: 120px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;/*bode redondeado*/
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}

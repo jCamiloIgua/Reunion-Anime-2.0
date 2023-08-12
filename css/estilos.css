@@ -1,0 +1,297 @@
+/*jumbo trom*/
+/*Pagina de inicio*/
+.jumbotron{
+    margin-top: 20px;
+    background-image: url(https://i.ibb.co/G3kdq1v/673189.png);
+    background-size: cover;
+    color: white   
+}
+/*color fondos*/ /*se iso el fondo con l apagina Hero Patterns*/
+body{
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23d2cf6d' fill-opacity='0.33' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+/*ESTILOS DE LOS PARRAFOS Y LA IMAGEN*/
+
+.main{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+/*color de la columna de articulos*/
+.color{
+    background: #E2E3E3;
+}
+
+/*PARA LA LINEA DE SEPARACION DE CADA ARTICULO IMPORTANTE*/
+.post{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid#3232FF; /*BORDE*/
+}
+
+/*TITULO DEL ARTICULO*/
+.post .post-tittle a{
+    color: #991616;
+}
+
+/*MINIATURA O IMAGEN*/
+
+.post .thumb{
+    margin-right: 12px; /*MARGEN A LA DERECHA espacio del texto de la imagen */
+    padding: 5px;
+    width: 40%; /*CONTENEDRO MIDE EL 40% OSEA EL CONTENIDO YA TIENE UN ESPACIO ESPECIFICADO*/
+
+}
+/**SE ORDENA EL TAMAÑO DE LA IMGEN SEGUN EL CONTENEDOR QUE ANTERIOR MENTE ISIMOS*/
+.post .thumb img{
+    width: 100%; /*ANCHO*/
+   
+}
+
+/*configuracion imagenes animes*/
+
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px 5px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgb(0 0 0 / 50%);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+ 
+/*Color de botones de redes sociales*/
+
+.btn-link {
+    font-weight: 400;
+    color: #337ab7;
+
+}
+/*LOgo imagen del nombre de la barra*/
+.navbar-brand {
+    float: left;
+    height: 58px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 33px;
+}
+
+
+
+/*Color de letra de titulo*/
+.navbar-inverse .navbar-brand {
+    color: #9d9d9d;
+}
+ /*tamaño botones de barra*/
+
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/*INTENTO DE BARRA*/
+
+.navegacion{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1px 1px;
+}
+
+
+input[type="search"]{
+    padding: 5px;
+    padding-right: 30px;
+    
+}
+
+.search{
+    width: 90%;
+    max-width: 10000px;
+    margin: auto;
+    background:#F3F3F3;
+    padding: 0 10px; /*largo de letras*/
+    padding-bottom: 5px;
+    max-height: 39%;
+    overflow-x: hidden;
+    display: none;
+
+}
+.panel-heading{
+    max-height: 25%;
+}
+.panel-body {
+    padding: 5px;
+}
+
+.panel-heading {
+    padding: 1px 1px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.search-table{
+    width: 50%;
+
+}
+.tbody tr td{
+    width: 50%;
+}
+tbody tr td a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 10%;
+    padding: 10px 0; /*espacio entre letras*/
+    padding-left: 1px;/*espacio de lado*/
+    border: 4px solid#F3F3F3;
+    
+}
+
+.panel-default>.panel-heading {
+    color:black;
+    background-color:#f5f5f5;
+    border-color: #ddd;
+}
+
+tbody tr td a:hover{
+    border: 2px solid #378fd9;
+}
+.search::-webkit-scrollbar{
+    background:rgba(0,0,0,0);
+}
+
+.search::-webkit-scrollbar-button{
+    background: #C1C1C1;
+}
+
+.search::-webkit-scrollbar-thumb{
+    background: black;
+}
+/*quitar diseños raros*/
+.dataTables_length{
+    display: none;
+}
+
+.dataTables_filter{
+    display: none;
+}
+
+.dataTables_info{
+    display: none;
+}
+
+.dataTables_paginate{
+    display: none;
+}
+element.style {
+    height: 20vh;
+    background: rgb(243, 243, 243);
+    height: 170px;
+}
+/*logo con fond owe*/
+.logo{
+    font-size: 34.6px;/*tamaño*/
+    color: #378fd9;/*color*/
+    margin-left: 9px;/*maegen izquieerda*/
+}
+.morado{ /*index*/
+    font-size: 34.6px;/*tamaño*/
+    color: #6214A3;/*color*/
+    margin-left: 9px;/*maegen izquieerda*/
+}
+.contacto{
+    font-size: 34.6px;/*tamaño*/
+    color: green;/*color*/
+    margin-left: 9px;/*maegen izquieerda*/
+}
+/*circulo letras*/
+.circulo{
+    margin-left: 9px;
+}
+.fa-circle:before {
+    content: "\f111";
+    font-size: 13px;
+}
+/*letra de abcd*/
+.letra{
+    font-size: 32px;
+    color: black;
+}
+/*tamaño de botones del menu de inio*/
+.navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+
+
+
+/*diseño botones de la paguinacion*/
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    margin-left: 1px;
+    line-height: 1.42857143;
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+/*centrar botones de la paginacion*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: 5%;
+}
+/*boton activo de la paginacion*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: black;
+    cursor: default;
+    background-color: lightblue;
+    border-color: midnightblue;
+}
+/*color del indice letras
+
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    background: aqua;
+}
+ /*color de los espacios entre letras del incide de animes*
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: red; 
+}*/
+
+
+
+/*MEDIA QUERIE*/ /*RESPONCIVE*
+@media screen and (max-width: 768px){
+    .post .thumb {
+        width: 100%;
+        height: 40%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
